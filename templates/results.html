@@ -34,7 +34,7 @@
         <div class="container">
             <div class="card-columns">
             <!-- for loop XXXXXXXXXXXXx using url and media url-->
-                {%for result in gif_search %}
+                {% for result in results %}
                 
                     <div class="card">
                         <a href={{ result.url }} target="_blank">
@@ -42,7 +42,7 @@
                         </a>
                     </div>
                        
-                {% endfor%}
+                {% endfor %}
             
             </div>
         </div>

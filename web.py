@@ -1,8 +1,9 @@
 # Caio Pereira and Jingjing Yao
 #Web.py file for final project 
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import giphypop
+import os
 app = Flask(__name__)
 
 
@@ -25,14 +26,13 @@ def about():
 def results():
 	gif_search = request.values.get('search_words')
 	g = giphypop.Giphy()
-	if gif_search == "";
+	if gif_search == "":
 		return render_template('index.html')
 	else:
 		results = g.search(gif_search)
-	
+		return render_template('results.html', results=results, gif_search=gif_search)
 
-	return render_template('results.html')
-
+#	return render_template('results.html')
 
 port = int(os.environ.get("PORT", 5000))
 app.run(host="0.0.0.0", port=port)
