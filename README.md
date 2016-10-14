@@ -3,5 +3,5 @@
 
 This is an application that searches GIFs 
 
-by [Caio Pereira](http:// www.facebook.com/caio.pereira.5855)
+by [Caio Pereira](http://www.facebook.com/caio.pereira.5855)
 and [Jingjing Yao](https://www.facebook.com/jingjing.yao.75)
