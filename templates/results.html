@@ -23,17 +23,18 @@
         </nav>
         
         <!-- Jumbotron -->
+        <!-- Message to the user and option to go back to search -->
         <div class="jumbotron">
             <div class="container">
                 <h1>GIFs tagged with {{ gif_search }}</h1>
-                <a href="/">Back to search</a>
+                <a href="/" class="btn btn-primary">Back to search</a>
             </div>
         </div>
 
         <!-- GIF Search Results -->
         <div class="container">
             <div class="card-columns">
-            <!-- for loop XXXXXXXXXXXXx using url and media url-->
+            <!-- for loop that shows results using .url and .media_url from giphypop-->
                 {% for result in results %}
                 
                     <div class="card">
